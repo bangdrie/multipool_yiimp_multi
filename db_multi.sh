@@ -67,7 +67,6 @@ sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2017-11-segwit
 sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2018-01-stratums_ports.sql
 sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2018-02-coins_getinfo.sql
 sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2019-03-coins_thepool_life.sql
-sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2020-06-03-blocks.sql
 sudo sed -i '/max_connections/c\max_connections         = 800' /etc/mysql/my.cnf
 sudo sed -i '/thread_cache_size/c\thread_cache_size       = 512' /etc/mysql/my.cnf
 sudo sed -i '/tmp_table_size/c\tmp_table_size          = 128M' /etc/mysql/my.cnf
